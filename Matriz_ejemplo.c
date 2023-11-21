@@ -12,17 +12,15 @@ int main()
 
     for (int i = 0; i < a; i++)
     {
+        printf ("\n");
+
         for (int j = 0; j < b; j++)
         {
-            matriz[i][j]=0;
-            matriz[0][0]=1;
-            matriz[2][2]=1;
-            matriz[3][3]=1;
-            printf("%d", matriz[i][j]);
+            matriz[i][j] = 0;
+            matriz[i+1][j+1]=1;
+            printf("%d \t", matriz[i][j]);
         }
-        
     }
-    
 
     return 0;
 }
